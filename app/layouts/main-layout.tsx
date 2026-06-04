@@ -10,7 +10,7 @@ export function HydrateFallback() {
 
 const MainLayout = () => {
   return (
-    <section className='flex flex-col gap-5'>
+    <section className='flex flex-col'>
       <Header />
       <Outlet />
     </section>

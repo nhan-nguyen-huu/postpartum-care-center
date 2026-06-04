@@ -9,7 +9,7 @@ export const useProfileApi = (options?: UseProfileApiQueryOptions) => {
     queryKey: [QUERY_KEY.USER.PROFILE],
     queryFn: async () => {
       const res = await UserService.GetProfile()
-      const data = res?.result?.data
+      const data = res?.data
       if (!data) {
         throw new Error('Error')
       }
