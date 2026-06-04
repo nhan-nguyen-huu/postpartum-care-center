@@ -1,0 +1,18 @@
+{
+  "common": {
+    "appName": "Hospital"
+  },
+  "meta": {
+    "title": "Hospital"
+  },
+  "inputValidate": {
+    "informationisRequired": "이 정보는 필수입니다."
+  },
+  "enums": {
+    "mode": {
+      "view": "View",
+      "add": "Add",
+      "edit": "Edit"
+    }
+  }
+}
