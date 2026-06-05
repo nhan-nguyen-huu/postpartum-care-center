@@ -9,7 +9,7 @@ export const ROUTES = {
     MATERNITY: 'maternity',
     SEND_NOTIFICATION: 'send-notification',
     WEBSITE: 'website',
-    SETTING: 'settings'
+    SETTINGS: 'settings'
   },
   AUTH: {
     BASE: 'auth',

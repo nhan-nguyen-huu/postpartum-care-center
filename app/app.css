@@ -5,6 +5,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --spacing-height-header: 76px;
+  --breakpoint-xs: 320px;
+  --spacing-mw: 1440px;
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Inter Variable', sans-serif;

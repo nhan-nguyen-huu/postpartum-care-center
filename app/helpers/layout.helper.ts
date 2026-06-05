@@ -48,7 +48,7 @@ export const layoutHelper = {
       {
         icon: Calendar,
         name: t('menu.settings'),
-        url: ROUTES.MAIN.SETTING
+        url: ROUTES.MAIN.SETTINGS
       }
     ]
   }

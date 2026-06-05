@@ -13,3 +13,7 @@ export interface IApiResponse<T> {
   message?: string
   code?: number | string
 }
+
+export interface IRouteHandle {
+  name?: string
+}

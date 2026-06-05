@@ -17,8 +17,8 @@ const CalendarSchedule = () => {
   return (
     <>
       {mounted ? (
-        <section className='w-full h-[calc(100dvh-76px)] overflow-y-auto p-6'>
-          <section className='max-w-360 mx-auto'>
+        <section className='w-full h-[calc(100dvh-var(--spacing-height-header))] overflow-y-auto p-6'>
+          <section className='max-w-mw mx-auto'>
             <FullCalendar
               locale={koLocale}
               plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}

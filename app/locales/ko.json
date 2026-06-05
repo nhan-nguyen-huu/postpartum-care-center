@@ -1,6 +1,9 @@
 {
   "common": {
-    "appName": "Postpartum care center"
+    "appName": "Postpartum care center",
+    "rowsPerPage": "페이지당 행 수",
+    "prevPagi": "이전",
+    "nextPagi": "다음"
   },
   "menu": {
     "schedule": "일정",
@@ -19,11 +22,20 @@
   "inputValidate": {
     "informationisRequired": "이 정보는 필수입니다."
   },
+  "table": {
+    "searchAddressTableKey": {
+      "roadAddr": "도로명주소",
+      "zipCode": "우편번호"
+    }
+  },
   "enums": {
     "mode": {
       "view": "View",
       "add": "Add",
       "edit": "Edit"
     }
+  },
+  "empty": {
+    "noData": "데이터가 없습니다."
   }
 }
