@@ -25,7 +25,7 @@ const SummarySchedule = () => {
     }
   ]
   return (
-    <section className='w-90 p-6 flex flex-col gap-6 h-[calc(100dvh-var(--spacing-height-header))] overflow-y-auto border border-input bg-white'>
+    <section className='w-full lg:w-90 p-6 flex flex-col gap-6 h-full lg:h-[calc(100dvh-var(--spacing-height-header))] overflow-y-visible lg:overflow-y-auto border border-input bg-white'>
       <p className='text-sm'>오늘 일정 요약</p>
       <section className='flex flex-col gap-6'>
         {_DATA.map((d, idx) => {

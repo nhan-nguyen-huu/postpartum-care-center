@@ -1,5 +1,5 @@
 import type { TFunction } from 'i18next'
-import { Calendar } from 'lucide-react'
+import { Bell, Calendar, File, MessageCircle, User } from 'lucide-react'
 import { ROUTES } from '~/shared/constants'
 
 export const layoutHelper = {
@@ -11,7 +11,7 @@ export const layoutHelper = {
         url: ROUTES.MAIN.SCHEDULE
       },
       {
-        icon: Calendar,
+        icon: File,
         name: t('menu.contract'),
         url: ROUTES.MAIN.CONTRACT
       },
@@ -26,17 +26,17 @@ export const layoutHelper = {
         url: ROUTES.MAIN.ROOM_STATUS
       },
       {
-        icon: Calendar,
+        icon: User,
         name: t('menu.membership'),
         url: ROUTES.MAIN.MEMBERSHIP
       },
       {
-        icon: Calendar,
+        icon: MessageCircle,
         name: t('menu.maternity'),
         url: ROUTES.MAIN.MATERNITY
       },
       {
-        icon: Calendar,
+        icon: Bell,
         name: t('menu.sendNotification'),
         url: ROUTES.MAIN.SEND_NOTIFICATION
       },

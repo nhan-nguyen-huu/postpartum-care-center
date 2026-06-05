@@ -43,11 +43,11 @@ const DrawerCustom = ({
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerTrigger className='sr-only'></DrawerTrigger>
       <DrawerContent
-        className={clsx('gap-6 border-none drawer-shadow rounded-tl-2xl! rounded-tr-2xl! pt-4', classNameDrawerContent)}
+        className={clsx('border-none drawer-shadow rounded-tl-2xl! rounded-tr-2xl!', classNameDrawerContent)}
         onCloseAutoFocus={(e) => e.preventDefault()}
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
-        <DrawerHeader className='py-0'>
+        <DrawerHeader>
           <section className='flex items-center justify-between'>
             {title && <DrawerTitle className='text-left'>{title}</DrawerTitle>}
             <DrawerDescription className='sr-only'></DrawerDescription>

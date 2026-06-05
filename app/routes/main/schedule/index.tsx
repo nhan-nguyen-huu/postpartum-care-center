@@ -8,7 +8,7 @@ export const handle: IRouteHandle = {
 
 const SchedulePage = () => {
   return (
-    <section className='flex h-[calc(100dvh-var(--spacing-height-header))] overflow-y-hidden'>
+    <section className='flex flex-col lg:flex-row h-full lg:h-[calc(100dvh-var(--spacing-height-header))] overflow-y-visible lg:overflow-y-hidden'>
       <SummarySchedule />
       <CalendarSchedule />
     </section>
