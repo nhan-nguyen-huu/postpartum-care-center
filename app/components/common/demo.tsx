@@ -107,7 +107,7 @@ export default function DemoPage() {
                       autoComplete='off'
                       type={showPassword ? 'text' : 'password'}
                     />
-                    <InputGroupAddon align='inline-end' className='!mr-1'>
+                    <InputGroupAddon align='inline-end' className='mr-1!'>
                       <button
                         aria-label={showPassword ? 'Hide password' : 'Show password'}
                         type='button'

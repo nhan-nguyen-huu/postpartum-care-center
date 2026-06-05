@@ -29,7 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <Provider>
-      <Toaster position='top-center' richColors duration={2000} offset={{ top: 40 }} />
+      <Toaster position='top-center' richColors duration={2000} />
       <GlobalLoader />
       <Outlet />
       <ReactQueryDevtools initialIsOpen={false} />
