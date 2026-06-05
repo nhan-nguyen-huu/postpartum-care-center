@@ -52,7 +52,7 @@ export default function DemoPage() {
         cookieHelper.setAccessToken(accessToken)
         cookieHelper.setRefreshToken(refreshToken)
         toast.success('Login successful!')
-        navi(`/${ROUTES.HOME}`)
+        navi(ROUTES.MAIN.HOME)
       }
     }
   })

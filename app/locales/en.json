@@ -2,8 +2,19 @@
   "common": {
     "appName": "Postpartum care center"
   },
+  "menu": {
+    "schedule": "일정",
+    "contract": "계약",
+    "payment": "결제",
+    "roomStatus": "룸현황",
+    "membership": "회원",
+    "maternity": "산모 문의",
+    "sendNotification": "알림 발송",
+    "website": "홈페이지",
+    "settings": "설정"
+  },
   "meta": {
-    "title": "postpartum care center"
+    "title": "Postpartum care center"
   },
   "inputValidate": {
     "informationisRequired": "이 정보는 필수입니다."

@@ -127,4 +127,38 @@
   html {
     @apply font-sans;
   }
+  /*  Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+  ::-webkit-scrollbar-track {
+    background: #cececf;
+    border-radius: 100px;
+  }
+
+  /* Chrome, Safari, Edge Hidden increase input number */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+  }
+
+  /*  Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield !important;
+  }
 }

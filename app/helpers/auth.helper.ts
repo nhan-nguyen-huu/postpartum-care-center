@@ -9,10 +9,9 @@ export const authHelper = {
     const token = cookieHelper.getAccessToken()
     switch (type) {
       case 'ROOT':
-        console.log('ROOT')
         return !token ? redirect(ROUTES.AUTH.LOGIN) : null
       case 'AUTH_ONLY':
-        return token ? redirect(ROUTES.HOME) : null
+        return token ? redirect(ROUTES.MAIN.HOME) : null
       case 'PRIVATE':
         return !token ? redirect(`/${ROUTES.AUTH.LOGIN}`) : null
     }
