@@ -26,6 +26,16 @@
     "searchAddressTableKey": {
       "roadAddr": "도로명주소",
       "zipCode": "우편번호"
+    },
+    "membershipTableKey": {
+      "name": "이름",
+      "contact": "연락처",
+      "package": "패키지",
+      "status": "상태",
+      "roomNumber": "호실",
+      "contract": "계약서",
+      "remainingAmount": "잔여 금액",
+      "action": "액션"
     }
   },
   "enums": {
@@ -43,6 +53,12 @@
       "reservation": "예약",
       "checkIn": "입실",
       "checkOut": "퇴실"
+    },
+    "membershipSummaryStatus": {
+      "allMembers": "전체 회원",
+      "currentlyCheckedIn": "현재 입실",
+      "waitingForReservation": "예약 대기",
+      "checkedOutComplete": "퇴실 완료"
     }
   },
   "empty": {

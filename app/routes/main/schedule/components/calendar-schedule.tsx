@@ -93,6 +93,8 @@ const CalendarSchedule = () => {
               </p>
             )
           }}
+          dayMaxEvents={3}
+          contentHeight='auto'
           dayHeaderContent={(arg) => {
             const dayOfWeek = arg.date.getDay()
             return (
