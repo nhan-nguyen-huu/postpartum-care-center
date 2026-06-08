@@ -1,16 +1,17 @@
 import { Search } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import PaginationCustom from '~/components/customs/pagination-custom'
-import TableCustom from '~/components/customs/table-custom'
+import { Fragment } from 'react/jsx-runtime'
 import { Button } from '~/components/ui/button'
 import { InputGroup, InputGroupAddon, InputGroupInput } from '~/components/ui/input-group'
-import columnHelper from '~/helpers/column.helper'
-import { usePagination } from '~/hooks'
+import ContractItem from '~/routes/main/contract/components/contract-item'
+import ListContract from '~/routes/main/contract/components/list-contract'
 
 const ContractPage = () => {
-  const { t } = useTranslation()
-  const { paging, setPage, setSize } = usePagination()
-
+  const _DATA_CONTRACT = [
+    {
+      phone: '010938498984',
+      date: '2025.11.10'
+    }
+  ]
   return (
     <section className='flex flex-col gap-6 p-6'>
       <section className='flex items-center justify-between gap-2 '>
@@ -28,39 +29,17 @@ const ContractPage = () => {
           <InputGroupInput placeholder='산모명, 전화번호, 패키지명으로 검색...' autoComplete='off' />
         </InputGroup>
       </section>
-      {/* Table */}
-      <section className='flex flex-col gap-5'>
-        <TableCustom
-          loading={false}
-          columns={columnHelper.getColumnsSelectAddressTable(t)}
-          data={[
-            {
-              roadAddr: 'A',
-              zipCode: 'B'
-            },
-            {
-              roadAddr: 'A',
-              zipCode: 'B'
-            },
-            {
-              roadAddr: 'A',
-              zipCode: 'B'
-            },
-            {
-              roadAddr: 'A',
-              zipCode: 'B'
-            }
-          ]}
-          emptyText={t('empty.noData')}
-        />
-        <PaginationCustom
-          page={paging?.page}
-          totalPage={200}
-          onPageChange={setPage}
-          pageSize={paging?.size}
-          onPageSizeChange={setSize}
-        />
-      </section>
+
+      {/* List contract */}
+      <ListContract>
+        {_DATA_CONTRACT.map((c, idx) => {
+          return (
+            <Fragment key={idx}>
+              <ContractItem data={c} />
+            </Fragment>
+          )
+        })}
+      </ListContract>
     </section>
   )
 }
