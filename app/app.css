@@ -180,7 +180,7 @@
     flex-direction: row !important;
   }
   .fc-daygrid-day-frame {
-    padding: 16px;
+    padding: 12px;
   }
   .fc-daygrid-event-harness {
     margin-top: 4px !important;
@@ -194,13 +194,13 @@
     align-items: center !important;
     gap: 20px !important;
   }
-  .fc-prev-button,
-  .fc-next-button {
-    background-color: white !important;
-    color: black !important;
-    border: 1px solid rgb(215, 218, 215) !important;
-    box-shadow: none !important;
+  .fc .fc-day-other {
+    background-color: #fafafa;
   }
+  /* .fc .fc-day-other .fc-daygrid-day-top,
+  .fc .fc-day-other .fc-daygrid-day-number {
+    opacity: 1 !important;
+  } */
 }
 
 @layer utilities {
