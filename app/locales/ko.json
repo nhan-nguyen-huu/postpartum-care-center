@@ -37,6 +37,12 @@
     "contractStatus": {
       "signed": "서명완료",
       "sent": "발송됨"
+    },
+    "scheduleCalendarStatus": {
+      "consultation": "상담",
+      "reservation": "예약",
+      "checkIn": "입실",
+      "checkOut": "퇴실"
     }
   },
   "empty": {

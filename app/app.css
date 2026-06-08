@@ -167,4 +167,69 @@
   input[type='number'] {
     -moz-appearance: textfield !important;
   }
+
+  /* Full calendar */
+  .fc .fc-scrollgrid {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  .fc-daygrid-day-top {
+    flex-direction: row !important;
+  }
+  .fc-daygrid-day-frame {
+    padding: 16px;
+  }
+  .fc-daygrid-event-harness {
+    margin-top: 4px !important;
+  }
+  .fc .fc-day-today {
+    background-color: white !important;
+  }
+  .fc-toolbar-chunk > div {
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  .fc-prev-button,
+  .fc-next-button {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid rgb(215, 218, 215) !important;
+    box-shadow: none !important;
+  }
+}
+
+@layer utilities {
+  .status-consultation {
+    background-color: #fff085 !important;
+    color: black !important;
+    border: transparent !important;
+    padding: 12px !important;
+    border-radius: 4px !important;
+  }
+  .status-reservation {
+    background-color: #ffc9c9 !important;
+    color: black !important;
+    border: transparent !important;
+    padding: 12px !important;
+    border-radius: 4px !important;
+  }
+  .status-checkin {
+    background-color: #b9f8cf !important;
+    color: black !important;
+    border: transparent !important;
+    padding: 12px !important;
+    border-radius: 4px !important;
+  }
+  .status-checkout {
+    background-color: #bedbff !important;
+    color: black !important;
+    border: transparent !important;
+    padding: 12px !important;
+    border-radius: 4px !important;
+  }
 }
