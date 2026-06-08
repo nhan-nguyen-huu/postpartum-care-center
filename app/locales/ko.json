@@ -33,6 +33,10 @@
       "view": "View",
       "add": "Add",
       "edit": "Edit"
+    },
+    "contractStatus": {
+      "signed": "서명완료",
+      "sent": "발송됨"
     }
   },
   "empty": {

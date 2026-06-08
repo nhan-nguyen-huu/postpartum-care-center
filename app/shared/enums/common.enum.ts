@@ -3,3 +3,8 @@ export enum eMode {
   Add = 'ADD',
   Edit = 'EDIT'
 }
+
+export enum eContractStatus {
+  Signed = 'SIGNED',
+  Sent = 'SENT'
+}

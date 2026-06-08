@@ -4,12 +4,19 @@ import { Button } from '~/components/ui/button'
 import { InputGroup, InputGroupAddon, InputGroupInput } from '~/components/ui/input-group'
 import ContractItem from '~/routes/main/contract/components/contract-item'
 import ListContract from '~/routes/main/contract/components/list-contract'
+import { eContractStatus } from '~/shared/enums'
 
 const ContractPage = () => {
   const _DATA_CONTRACT = [
     {
       phone: '010938498984',
-      date: '2025.11.10'
+      date: '2025.11.10',
+      status: eContractStatus.Sent
+    },
+    {
+      phone: '010938498984',
+      date: '2025.11.10',
+      status: eContractStatus.Signed
     }
   ]
   return (
