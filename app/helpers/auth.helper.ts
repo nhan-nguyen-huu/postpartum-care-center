@@ -5,6 +5,7 @@ import type { ProtectedType } from '~/shared/types'
 import cookieHelper from './cookie.helper'
 
 export const authHelper = {
+  // Check protected
   handleProtectedRoute: (type: ProtectedType) => {
     const token = cookieHelper.getAccessToken()
     switch (type) {
