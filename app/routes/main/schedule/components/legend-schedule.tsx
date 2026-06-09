@@ -6,19 +6,19 @@ const LegendSchedule = () => {
   const _DATA = [
     {
       className: 'bg-[#fff085]',
-      name: t('enums.scheduleCalendarStatus.consultation')
+      name: t('enums.scheduleStatus.consultation')
     },
     {
       className: 'bg-[#ffc9c9]',
-      name: t('enums.scheduleCalendarStatus.reservation')
+      name: t('enums.scheduleStatus.reservation')
     },
     {
       className: 'bg-[#b9f8cf]',
-      name: t('enums.scheduleCalendarStatus.checkIn')
+      name: t('enums.scheduleStatus.checkIn')
     },
     {
       className: 'bg-[#bedbff]',
-      name: t('enums.scheduleCalendarStatus.checkOut')
+      name: t('enums.scheduleStatus.checkOut')
     }
   ]
   return (

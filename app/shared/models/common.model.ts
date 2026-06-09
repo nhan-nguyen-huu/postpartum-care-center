@@ -1,3 +1,5 @@
+import type { eScheduleStatus } from '~/shared/enums'
+
 export interface IApiPagination {
   content?: []
   page?: number
@@ -15,5 +17,12 @@ export interface IApiResponse<T> {
 }
 
 export interface IRouteHandle {
+  name?: string
+}
+
+export interface ISchedule {
+  time?: string
+  start?: string
+  scheduleStatus?: eScheduleStatus
   name?: string
 }

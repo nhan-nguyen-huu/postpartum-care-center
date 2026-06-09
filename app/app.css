@@ -61,7 +61,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.6759 0.1736 152.04);
+  --primary: oklch(0.11 0.04 280.7);
   --primary-foreground: oklch(0.982 0.018 155.826);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -81,7 +81,7 @@
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.6759 0.1736 152.04);
+  --sidebar-primary: oklch(0.11 0.04 280.7);
   --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -197,6 +197,10 @@
   .fc .fc-day-other {
     background-color: #fafafa;
   }
+  .fc-daygrid-day-bottom {
+    margin-top: 4px !important;
+    color: blue;
+  }
   /* .fc .fc-day-other .fc-daygrid-day-top,
   .fc .fc-day-other .fc-daygrid-day-number {
     opacity: 1 !important;
@@ -205,28 +209,28 @@
 
 @layer utilities {
   .status-consultation {
-    background-color: #fff085 !important;
+    background-color: #fef3c7 !important;
     color: black !important;
     border: transparent !important;
     padding: 12px !important;
     border-radius: 4px !important;
   }
   .status-reservation {
-    background-color: #ffc9c9 !important;
+    background-color: #fee2e2 !important;
     color: black !important;
     border: transparent !important;
     padding: 12px !important;
     border-radius: 4px !important;
   }
   .status-checkin {
-    background-color: #b9f8cf !important;
+    background-color: #d1fae5 !important;
     color: black !important;
     border: transparent !important;
     padding: 12px !important;
     border-radius: 4px !important;
   }
   .status-checkout {
-    background-color: #bedbff !important;
+    background-color: #dbeafe !important;
     color: black !important;
     border: transparent !important;
     padding: 12px !important;

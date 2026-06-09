@@ -9,7 +9,7 @@ export enum eContractStatus {
   Sent = 'SENT'
 }
 
-export enum eScheduleCalendarStatus {
+export enum eScheduleStatus {
   Consultation = 'CONSULATION',
   Reservation = 'RESERVATION',
   CheckIn = 'CHECK_IN',

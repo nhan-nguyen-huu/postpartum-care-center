@@ -9,14 +9,14 @@ interface IMembershipSummaryItemProps {
 }
 const MembershipSummaryItem = ({ title, amount, membershipSummaryStatus }: IMembershipSummaryItemProps) => {
   const classNameVariant: Record<eMembershipSummaryStatus, string> = {
-    [eMembershipSummaryStatus.AllMembers]: 'border border-input bg-background',
-    [eMembershipSummaryStatus.CurrentlyCheckedIn]: 'border border-green-500 bg-green-50 text-green-500',
-    [eMembershipSummaryStatus.WaitingForReservation]: 'border border-yellow-500 bg-yellow-50 text-yellow-500',
-    [eMembershipSummaryStatus.CheckedOutComplete]: 'border border-blue-500 bg-blue-50 text-blue-500'
+    [eMembershipSummaryStatus.AllMembers]: 'border-input bg-background',
+    [eMembershipSummaryStatus.CurrentlyCheckedIn]: 'border-green-500 bg-green-50 text-green-500',
+    [eMembershipSummaryStatus.WaitingForReservation]: 'border-yellow-500 bg-yellow-50 text-yellow-500',
+    [eMembershipSummaryStatus.CheckedOutComplete]: 'border-blue-500 bg-blue-50 text-blue-500'
   }
   return (
     <section
-      className={clsx('flex flex-col gap-2 flex-1 p-4 rounded-[8px]', classNameVariant[membershipSummaryStatus])}
+      className={clsx('flex flex-col gap-2 flex-1 p-4 rounded-[8px] border', classNameVariant[membershipSummaryStatus])}
     >
       <p>{title}</p>
       <p className='font-medium text-[25px]'>{commonHelper.formatKoreaMoney(amount, 'character')}</p>

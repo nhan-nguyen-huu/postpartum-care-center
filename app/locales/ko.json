@@ -3,7 +3,8 @@
     "appName": "Postpartum care center",
     "rowsPerPage": "페이지당 행 수",
     "prevPagi": "이전",
-    "nextPagi": "다음"
+    "nextPagi": "다음",
+    "totalSchedules": "총 {{value}}개의 일정"
   },
   "menu": {
     "schedule": "일정",
@@ -48,7 +49,7 @@
       "signed": "서명완료",
       "sent": "발송됨"
     },
-    "scheduleCalendarStatus": {
+    "scheduleStatus": {
       "consultation": "상담",
       "reservation": "예약",
       "checkIn": "입실",

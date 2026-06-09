@@ -93,12 +93,12 @@ const DialogCustom = ({
         {/* Dialog footer */}
         {!hiddenFooter && (
           <DialogFooter>
-            <section className='flex-1 flex items-center justify-center gap-space-main'>
+            <section className='flex-1 flex items-center justify-center gap-3'>
               {!hiddenCancelAction && (
                 <DialogClose asChild>
                   <Button
                     variant='outline'
-                    className='bg-gray-300 border-transparent flex-1 rounded-3xl hover:bg-gray-300 hover:opacity-40'
+                    className='bg-white border-input flex-1 rounded-[8px] h-10'
                     onClick={() => onCancelAction?.()}
                   >
                     {cancelText}
@@ -106,7 +106,7 @@ const DialogCustom = ({
                 </DialogClose>
               )}
               {!hiddenOkAction && (
-                <Button onClick={() => onOkAction?.()} disabled={disabledOkBtn} className='flex-1 rounded-3xl'>
+                <Button onClick={() => onOkAction?.()} disabled={disabledOkBtn} className='flex-1 rounded-[8px] h-10'>
                   {okText}
                 </Button>
               )}
