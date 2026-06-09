@@ -3,7 +3,8 @@
     "appName": "Postpartum care center",
     "rowsPerPage": "페이지당 행 수",
     "prevPagi": "이전",
-    "nextPagi": "다음"
+    "nextPagi": "다음",
+    "totalSchedules": "총 {{value}}개의 일정"
   },
   "menu": {
     "schedule": "일정",
@@ -26,6 +27,16 @@
     "searchAddressTableKey": {
       "roadAddr": "도로명주소",
       "zipCode": "우편번호"
+    },
+    "membershipTableKey": {
+      "name": "이름",
+      "contact": "연락처",
+      "package": "패키지",
+      "status": "상태",
+      "roomNumber": "호실",
+      "contract": "계약서",
+      "remainingAmount": "잔여 금액",
+      "action": "액션"
     }
   },
   "enums": {
@@ -38,11 +49,17 @@
       "signed": "서명완료",
       "sent": "발송됨"
     },
-    "scheduleCalendarStatus": {
+    "scheduleStatus": {
       "consultation": "상담",
       "reservation": "예약",
       "checkIn": "입실",
       "checkOut": "퇴실"
+    },
+    "membershipSummaryStatus": {
+      "allMembers": "전체 회원",
+      "currentlyCheckedIn": "현재 입실",
+      "waitingForReservation": "예약 대기",
+      "checkedOutComplete": "퇴실 완료"
     }
   },
   "empty": {
